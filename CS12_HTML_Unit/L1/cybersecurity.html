@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #ffffff;
+        }
+
+        .holder {
+            padding: 20px;
+            background-color: #ebebeb;
+            color: #181818;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #b8b8b8;
+            border-width: 1px;
+            gap: 20px;
+            display: grid;
+
+        }
+
+        .block {
+            padding: 10px;
+            background-color: #f7f7f7;
+            color: #181818;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #cfcfcf;
+            border-width: 1px;
+            display: grid;
+           
+        }
+
+        h1 {
+            padding: 0%;
+            margin : 0%;
+            margin-top  : 10px;
+        }
+
+        p {
+            padding: 0%;
+            margin: 0%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="holder">
+
+        <div class="block">
+            <h1>MySpace Injection</h1>
+            <p> MySpace profiles used HTML markup for their profile pages.
+                While this was originally fine, Samy Kamkar realized that by inserting a script tag,
+                He could inject Javascript into the browser of anyone who opened his profile.
+                He used this Javascript to cause users who opened his profile to add his profile, and copy
+                the Javascript into their own profile. Within 20 hours, over one millon people had added him as
+                a
+                friend.
+                6 Months later he was arrested.
+            </p>
+        </div>
+
+        <div class="block">
+            <h1>Heartbleed - Open SSL</h1>
+            <p>The Heartbleed bug was a catastrophic vulnerability in the OpenSSL library
+                that allowed attackers to "bleed" sensitive data from a server's memory.
+                It exploited a flaw in the TLS Heartbeat extension, where an attacker
+                could send a malformed request claiming to have a large amount of data; the server,
+                failing to verify the actual size of the payload, would respond by copying up to
+                64KB of its own memory to fill the request. Because this memory often contained
+                private encryption keys, usernames, and passwords,
+                Heartbleed essentially broke the fundamental trust of the secure internet.
+                Most chillingly, the exploit left no trace in system logs, making it impossible
+                to know for sure how much data was stolen before the fix was deployed in 2014.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
