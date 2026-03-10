@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Tokyo</title>
+
+    <style>
+        table {
+            border: 1px solid gray;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="top">Tokyo Travel Guide</h1>
+    <p>Your complete guide to visiting one of the world's most exciting cities.</p>
+
+    <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#attractions">Top Attractions</a></li>
+        <li><a href="#food">Food & Drinks</a></li>
+        <li><a href="#travel">Getting There</a></li>
+        <li><a href="#trip">Plan Your Trip</a></li>
+    </ul>
+
+    <hr>
+
+    <h2 id="overview">Overview</h2>
+
+    <img src="tokyoskyline.png" alt="Tokyo city skyline at night with Tokyo Tower lit up in orange.">
+
+    <p>
+        Tokyo is the capital of japan and one of the most visited cities in the world. It blends ancient temples and
+        shrines with toering skyscrapers and cutting-edge technology. Whether you love history, food, fashion, or
+        nature, Tokyo has something for everyone.
+    </p>
+
+    <table>
+        <tr>
+            <th>Detail</th>
+            <th>Information</th>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>Japan</td>
+        </tr>
+        <tr>
+            <td>Language</td>
+            <td>Japanese</td>
+        </tr>
+        <tr>
+            <td>Currency</td>
+            <td>Japanese Yen(¥)</td>
+        </tr>
+        <tr>
+            <td>Best Time to Visit</td>
+            <td>March-May(spring) or October-November(autumn)</td>
+        </tr>
+        <tr>
+            <td>Time Zone</td>
+            <td>JST(UTC+9)</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2 id="attractions">Top Attractions</h2>
+
+    <p>Tokyo has hundreds of things to see and do. Here are the must-see highlights:</p>
+
+    <ol>
+        <li>Senso-ji Temple - Tokyo's oldest and most famous buddhist temple in Asakusa</li>
+        <li>Shibuya Crossing - The world's busiest pedestrian intersection</li>
+        <li>Tokyo Skytree - a 634 -metre broadcasting tower with obseration decks</li>
+        <li>Shinjuku Gyoen - A beautiful national garden perfect for cherry blossom season</li>
+        <li>Harajuku - Famous for unique street fashion and Takeshita Stree shopping</li>
+    </ol>
+
+    <img src="" alt="Senso-ji Temple gate with lantern and crowds of tourists">
+
+    <p>For more information, visit the official tourism website: <a href="https://www.gotokyo.org/en/index.html">Go
+            Tokyo</a></p>
+
+    <hr>
+
+    <h2 id="food">Food & Drink</h2>
+    <p>Tokyo has more Michelin-starred restaurants than any other city in the world. Here are some foods you must try:
+    </p>
+
+    <ul>
+        <li>Ramen - Rich noodle soup available in dozens of regional styles</li>
+        <li>Sushi & Sashimi - Fresh fish served at evrything from conveyer belt restaurants to high-end counters</li>
+        <li>Takoyaki - Grilled octopus balls, a popular street food snack</li>
+        <li>Match everything - Green tea ice cream, cakes, lattes, and more</li>
+        <li>Yakitori - Grilled chicken skewers, best enjoyed at a local izakaya</li>
+    </ul>
+
+    <p>See our <a href="/restaurants.html">Recommended Restaurants</a> page for a full list.</p>
+
+    <hr>
+
+    <h2 id="travel">Getting There</h2>
+
+    <p>Tokyo is served by two major internation airports:</p>
+
+    <table>
+        <tr>
+            <th>Airport</th>
+            <th>Code</th>
+            <th>Distance from City Centre</th>
+            <th>Travel Time by Train</th>
+        </tr>
+        <tr>
+            <td>Narita International Airport</td>
+            <td>NRT</td>
+            <td>60 km</td>
+            <td>~60 minutes</td>
+        </tr>
+        <tr>
+            <td>Haneda Airport</td>
+            <td>HND</td>
+            <td>14 km</td>
+            <td>~25 minutes</td>
+        </tr>
+    </table>
+
+    <p>Once in the city, the Tokyo Metro and JR train lines will take you almost anywhere. Consider purchasing a
+        <b>Suica card</b> for easy tap-and-go travel on all trains and buses.</p>
+
+    <hr>
+
+    <h2 id="trip">Plan Your Trip</h2>
+
+    <p>Tell us your trip and we will send you a personalized travel itinerary.</p>
+
+    <form action="/submit">
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" id="name" placeholder="Your full name">
+        <br>
+        <label for="email">Email Adress:</label>
+        <input type="email" name="email" id="email" placeholder="you@example.com">
+        <br>
+        <label for="date">Arrival Date:</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <label for="time">Number of Nights:</label>
+        <input type="number" name="time" id="time">
+        <br>
+        <br>
+        <label for="type">What kind of traveller are you?</label>
+        <br>
+        <input type="radio" name="type" id="solo">
+        <label for="solo">Solo</label>
+        <br>
+        <input type="radio" name="type" id="Couple">
+        <label for="Couple">Couple</label>
+        <br>
+        <input type="radio" name="type" id="Family">
+        <label for="Family">Family</label>
+        <br>
+        <input type="radio" name="type" id="Group">
+        <label for="Group">Group</label>
+        <br>
+
+        <label for="interest">Main Interest:</label>
+        <select name="interest" id="interest">
+            <option value="food">Food & Restaurants</option>
+            <option value="historical">Historical Views & Sights</option>
+        </select>
+
+        <br>
+
+        <label for="extra">Anythng else we should know?</label>
+        <br>
+        <textarea name="extra" id="extra" cols="30"
+            rows="4">Dietary requirements, accessibility needs, special requests...</textarea>
+
+        <br>
+        <br>
+
+        <button type="submit">Send My Itinerary</button> <button type="reset">Clear Form</button>
+    </form>
+
+    <hr>
+    <p>
+        <a href="#top">Back to top</a> | 
+        <a href="/restaurants.html">Restaurants</a> | 
+        <a href="https://www.gotokyo.org/en/index.html">Official Tokyo Tourism Site</a>
+    </p>
+</body>
+
+</html>
